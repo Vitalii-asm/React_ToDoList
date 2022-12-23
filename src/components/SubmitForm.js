@@ -30,7 +30,7 @@ class SubmitForm extends React.Component {
 		return (
 			<form>
 				<input type="text" value={this.state.value} onChange={this.handleChange.bind(this)} />
-				<button type="submit" onClick = {this.handleAddTodo.bind(this)}></button>
+				<button type="submit" onClick = {this.handleAddTodo.bind(this)}>AddTask</button>
 			</form>
 		)
 	}
