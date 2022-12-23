@@ -6,7 +6,19 @@ import { fontAwesomeIcon } from '@fortawesome/react-fontawesome';
 export default class List extends Component {
   render() {
 	 return (
-		<div>List</div>
+		 <ul>
+			 {this.props.List.map(item => { 
+				 const { id, value } = item;
+				 return (
+					 <li key={id}>
+						 {value}
+						 <button onclick={()=> this.props.onDelete(id)}>
+							 <fontAwesomeIcon icon={faTrash}/>
+						 </button>
+					 </li>
+				 )
+				})}
+		</ul>
 	 )
   }
 }
