@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
-import { fontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 export default class List extends Component {
@@ -13,7 +13,7 @@ export default class List extends Component {
 					 <li key={id}>
 						 {value}
 						 <button onclick={()=> this.props.onDelete(id)}>
-							 <fontAwesomeIcon icon={faTrash}/>
+							 <FontAwesomeIcon icon={faTrash}/>
 						 </button>
 					 </li>
 				 )
