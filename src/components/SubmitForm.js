@@ -1,5 +1,5 @@
 import React from "react";
-import { v4 } from 'uuid';
+import {v4} from 'uuid';
 
 class SubmitForm extends React.Component { 
 	state = {

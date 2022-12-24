@@ -10,6 +10,7 @@ class TodoList extends React.Component {
 		this.handleAdd = this.handleAdd.bind(this);
 		this.handleDele = this.handleDele.bind(this);
 	}
+	
 	state = {
 		list: [],
 	}
