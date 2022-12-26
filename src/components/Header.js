@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Header = ({ todoCount }) => { 
-	return <header>You have { todoCount} todos</header>
+const Header = ({todosCount}) => { 
+	return <header>You have {todosCount} todos</header>
 }
 
 export default Header;

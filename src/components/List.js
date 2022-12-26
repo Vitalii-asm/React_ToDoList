@@ -7,12 +7,12 @@ export default class List extends Component {
   render() {
 	 return (
 		 <ul>
-			 {this.props.List.map(item => { 
+			 {this.props.list.map(item => { 
 				 const { id, value } = item;
 				 return (
 					 <li key={id}>
 						 {value}
-						 <button onclick={()=> this.props.onDelete(id)}>
+						 <button onClick={()=> this.props.onDelete(id)}>
 							 <FontAwesomeIcon icon={faTrash}/>
 						 </button>
 					 </li>

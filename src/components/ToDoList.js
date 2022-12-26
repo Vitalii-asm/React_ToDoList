@@ -10,7 +10,7 @@ class TodoList extends React.Component {
 		this.handleAdd = this.handleAdd.bind(this);
 		this.handleDele = this.handleDele.bind(this);
 	}
-	
+
 	state = {
 		list: [],
 	}
@@ -33,7 +33,7 @@ class TodoList extends React.Component {
 		return (
 			<div>
 				<h2>TodoList</h2>
-				<Header TodosCount={this.state.list.length} />
+				<Header todosCount={this.state.list.length} />
 				<SubmitForm handleAdd={this.handleAdd} />
 				<List list={this.state.list} onDelete = {this.handleDele} />
 			</div>
